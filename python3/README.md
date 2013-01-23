@@ -1,6 +1,7 @@
 # Python 3.x
 
-The Python example code is located in [our git repository](https://github.com/SpotterRF/json-examples/tree/master/python3/).
+The Python example code is located in
+[our git repository](https://github.com/coolaj86/json-examples/tree/master/python3/).
 
 Like most languages, Python comes with a JSON (de)serializer (aka parser)
 as part of the standard library.
@@ -24,7 +25,7 @@ Python syntax for `dict`, `list`, `str`, and `int` literals **is** JSON?
 
 Get the Code
 
-    git clone git://github.com/SpotterRF/json-examples.git
+    git clone git://github.com/coolaj86/json-examples.git
     cd ./json/examples/python3
 
 Compile and run with optimizations

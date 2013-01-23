@@ -2,7 +2,8 @@
 
 **NOTICE**: Help make the world a better place and transition to python 3 already!
 
-The Python2.x example code is located in [our git repository](https://github.com/SpotterRF/json-examples/tree/master/python2/).
+The Python2.x example code is located in
+[our git repository](https://github.com/coolaj86/json-examples/tree/master/python2/).
 
 Like most languages, Python comes with a JSON (de)serializer (aka parser)
 as part of the standard library.
@@ -21,7 +22,7 @@ Python syntax for `dict`, `list`, `str`, and `int` literals **is** already JSON?
 
 Get the Code
 
-    git clone git://github.com/SpotterRF/json-examples.git
+    git clone git://github.com/coolaj86/json-examples.git
     cd ./json/examples/python2
 
 Compile and run with optimizations

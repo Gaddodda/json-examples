@@ -1,4 +1,4 @@
-The C# example code is located in a [Git repository here](https://github.com/SpotterRF/json-examples/tree/master/c%23/JsonDotNet/).
+The C# example code is located in a [Git repository here](https://github.com/coolaj86/json-examples/tree/master/c%23/JsonDotNet/).
 
 This code requires the following dependencies:
 
@@ -20,7 +20,7 @@ This depends on the project files being at:
 
     xbuild poll.csproj
 
-    mono ./bin/Debug/poll.exe 169.254.254.254 # IP of spotter
+    mono ./bin/Debug/poll.exe 169.254.254.254 # IP of json app
 
 To install, compile using Visual Studio, Mono Develop, or xbuild:
 
@@ -28,10 +28,10 @@ To install, compile using Visual Studio, Mono Develop, or xbuild:
 
 The poll example will:
 
-- get the `/geolocation.json` resource from a Spotter
+- get the `/geolocation.json` resource from a json app
 - grab the '`altitude`' value and do some simple modifications to it
     - example using JSON.NET
-- post the changed JSON data back to the Spotter
+- post the changed JSON data back to the json app
 
 ### Compile and Run the example code (with Visual Studio)
 
@@ -105,7 +105,7 @@ Sending the settings up to the server is quite similar, but we'll need to set mo
     req.ContentType = "application/json";
     req.ContentLength = settings.Length;
 
-Here, we specify that this is a POST request, whose content is JSON encoded. This is very important, because the Spotters only respond to data that is specifically stated as being JSON. We go ahead and set the content length because we know it.
+Here, we specify that this is a POST request, whose content is JSON encoded. This is very important, because the json apps only respond to data that is specifically stated as being JSON. We go ahead and set the content length because we know it.
 
 Next, we write the data to the request stream:
 

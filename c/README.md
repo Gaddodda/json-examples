@@ -1,4 +1,4 @@
-The example C code is located in a [Git repository here](https://github.com/SpotterRF/json-examples/tree/master/c).
+The example C code is located in a [Git repository here](https://github.com/coolaj86/json-examples/tree/master/c).
 
 This example will:
 
@@ -48,14 +48,14 @@ Note: `#include <json/json.h>` and `-ljson` have changed to `#include <json-c/js
 
 #### the main event
 
-    git clone git://github.com/SpotterRF/json-examples.git
+    git clone git://github.com/coolaj86/json-examples.git
     cd json-examples/c/
     rm -rf ./build
     mkdir -p ./build
     cd ./build
     cmake ..
     make
-    ./example 192.168.254.254 # ip or hostname of spotter
+    ./example 192.168.254.254 # ip or hostname of json app
 
 ### Example Code Walkthrough ###
 
@@ -69,7 +69,7 @@ Please see the documentation for the libraries for information about how to prop
 
 This function takes a URL constructed like this:
 
-> spotter.host-name.com/geolocation.json
+> json-app.host-name.com/geolocation.json
 
 or this:
 
@@ -136,7 +136,7 @@ This is basically the same as `getSettings`, but we include the "Allow-Encoding"
 
 #### handleSettings ####
 
-This is where our JSON parsing happens. It just takes the data that we CURL read in for us from the spotter.
+This is where our JSON parsing happens. It just takes the data that we CURL read in for us from the json app.
 
 Start out by initializing our JSON parser:
     
@@ -182,7 +182,7 @@ We'll need to tell CURL this is a POST, and since we know the size of the data w
     curl_easy_setopt(pCurl, CURLOPT_POST, 1);
     curl_easy_setopt(pCurl, CURLOPT_POSTFIELDSIZE, strlen(data));
 
-We'll need to set the content type of the message. This is necessary for the spotter to recognize the data as JSON. Here's the syntax for that:
+We'll need to set the content type of the message. This is necessary for the json app to recognize the data as JSON. Here's the syntax for that:
 
     struct curl_slist* headers = NULL;
     headers = curl_slist_append(headers, "Content-Type: application/json");
@@ -227,7 +227,7 @@ resource. This example shows how to iterate over a more complicated json object
 
 This function sets the url for curl to get track information. The first
 parameter to the function is an output variable that will point to the url and
-the second is a pointer to the hostname or IP address of the spotter.
+the second is a pointer to the hostname or IP address of the json app.
 
     #define TRACKS "/tracks.json"
 

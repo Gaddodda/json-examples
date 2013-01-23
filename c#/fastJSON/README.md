@@ -1,4 +1,4 @@
-The C# example code is located in a [Git repository here](https://github.com/SpotterRF/json-examples/tree/master/c%23/fastJSON/).
+The C# example code is located in a [Git repository here](https://github.com/coolaj86/json-examples/tree/master/c%23/fastJSON/).
 
 This code requires the following dependencies:
 
@@ -6,7 +6,7 @@ This code requires the following dependencies:
 
 ### Compile and Run the example code (with Mono Develop)
 
-    git clone git://github.com/SpotterRF/json-examples.git
+    git clone git://github.com/coolaj86/json-examples.git
     cd json-examples/c#/fastJSON
 
 Open 'http://www.codeproject.com/KB/IP/fastJSON/fastJSON_v1.9.6.zip' and create a login to download the source (what the weird kinda open source is this???)
