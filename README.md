@@ -39,7 +39,3 @@ The eventual goal is to have examples for all of the following in each language:
   * JSON parsing (decoding / deserializing)
   * Iterating over objects and arrays
   * JSON stringifying (encoding / serializing)
-
-# SDK
-
-One day we'll have an SDK...
